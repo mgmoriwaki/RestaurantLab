@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            Contact Us
+        </title>
+    </head>
+
+    <body>
+        <!--Page Name-->
+        <h1 align="center">Bob's Burgers</h1>
+        <hr/>
+
+        <!--Nav-->
+        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
+        <hr/> 
+
+        <!--Begin Form-->
+        <form action="#" method="POST">
+        <table>
+            <tr>
+                <td align="right"><label id="NameLabel" for="Name">Name: </label></td>
+                <td><input id="Name" name="Name" type="text"/></br></br></td>
+            </tr>
+            <tr>
+                <td align="right"><label id="EmailLabel" for="Email">Email: </label></td>
+                <td><input name="Email" type="text"/></br></br></td>
+            </tr>
+            <tr>
+                <td align="right"><label id="PhoneLabel" for="Phone"/>Phone: </label></td>
+                <td><input name="Phone" type="text"/></br></br></td>
+            <tr>
+                <td align="right"><label id="ReasonLabel" for="Reason"/>Reason for Inquiry: </label></td>
+                <td><select name="Reasons">
+                    <option value="Catering">Catering</option>
+                    <option value="Private Party">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </td>
+            <tr>
+                <td align="right"><label id="InfoLabel" for="Info">Additional Information: </label></td>
+                <td><textarea id="info" name="info"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right"><label id="HaveYouBeenLabel" for="HaveYourBeen">Have you been to the restaurant?</td>
+                <td><input type="radio" name="answer" value="No" checked/>No
+                    <input type="radio" name="answer" value="Yes"/>Yes</td>
+            </tr>
+                <td align="right"><label id="DayLabel" for="Day">Best days to contact you:</td>
+                <td><input type="checkbox" name="myChoices" value="Mon" />M
+                <input type="checkbox" name="myChoices" value="Tues" />T
+                <input type="checkbox" name="myChoices" value="Weds" />W
+                <input type="checkbox" name="myChoices" value="Thurs" />Th
+                <input type="checkbox" name="myChoices" value="Fri" />F</td>
+            <tr>
+                <td></td>
+                <td align="right"><input type="submit" id="SubmitButton" value="Send Request"/></td>
+        </table>
+        </form>
+        <hr/>
+        <center>
+            <h4>123 Ocean Avenue, Seymour's Bay, NJ, 12345</h4>
+            <h4>123-456-7890</h4>
+        </center> 
+    </body>
+</html>
