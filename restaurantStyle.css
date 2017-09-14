@@ -2,3 +2,8 @@ footer.smCenter {
     font-size: 9pt;
     text-align: center;
 }
+
+a{color: #cc3300; }
+a:visited {color: #008000;}
+a:active{text-decoration:none;}
+a:hover{font-weight:bold;}
