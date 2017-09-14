@@ -3,11 +3,22 @@
         <title>
             Contact Us
         </title>
+
+        <link rel="stylesheet" type="text/css" href="restaurantStyle.css">
+
+        <style>
+            h1{text-align: center;}
+            h3 {font-size:18pt; color: #ff8000;}
+            p {font-weight: bold;}
+            td {text-align: left; padding-bottom:15px;}
+            td.label {text-align: right; vertical-align:top;}
+            td.form {padding-left: 25px;}
+        </style>
     </head>
 
     <body>
         <!--Page Name-->
-        <h1 align="center">Bob's Burgers</h1>
+        <h1>Bob's Burgers</h1>
         <hr/>
 
         <!--Nav-->
@@ -18,48 +29,50 @@
         <form action="#" method="POST">
         <table>
             <tr>
-                <td align="right"><label id="NameLabel" for="Name">Name: </label></td>
-                <td><input id="Name" name="Name" type="text"/></br></br></td>
+                <td class="label"><label id="NameLabel" for="Name">Name: </label></td>
+                <td class="form"><input id="Name" name="Name" type="text"/></td>
             </tr>
             <tr>
-                <td align="right"><label id="EmailLabel" for="Email">Email: </label></td>
-                <td><input name="Email" type="text"/></br></br></td>
+                <td class="label"><label id="EmailLabel" for="Email">Email: </label></td>
+                <td class="form"><input name="Email" type="text"/></td>
             </tr>
             <tr>
-                <td align="right"><label id="PhoneLabel" for="Phone"/>Phone: </label></td>
-                <td><input name="Phone" type="text"/></br></br></td>
+                <td class="label"><label id="PhoneLabel" for="Phone"/>Phone: </label></td>
+                <td class="form"><input name="Phone" type="text"/></td>
             <tr>
-                <td align="right"><label id="ReasonLabel" for="Reason"/>Reason for Inquiry: </label></td>
-                <td><select name="Reasons">
+                <td class="label"><label id="ReasonLabel" for="Reason"/>Reason for Inquiry: </label></td>
+                <td class="form"><select name="Reasons">
                     <option value="Catering">Catering</option>
                     <option value="Private Party">Private Party</option>
                     <option value="Feedback">Feedback</option>
                     <option value="Other">Other</option>
                 </td>
             <tr>
-                <td align="right"><label id="InfoLabel" for="Info">Additional Information: </label></td>
-                <td><textarea id="info" name="info"></textarea></td>
+                <td class="label"><label id="InfoLabel" for="Info">Additional Information: </label></td>
+                <td class="form"><textarea id="info" name="info"></textarea></td>
             </tr>
             <tr>
-                <td align="right"><label id="HaveYouBeenLabel" for="HaveYourBeen">Have you been to the restaurant?</td>
-                <td><input type="radio" name="answer" value="No" checked/>No
+                <td class="label"><label id="HaveYouBeenLabel" for="HaveYourBeen">Have you been to the restaurant?</td>
+                <td class="form"><input type="radio" name="answer" value="No" checked/>No
                     <input type="radio" name="answer" value="Yes"/>Yes</td>
             </tr>
-                <td align="right"><label id="DayLabel" for="Day">Best days to contact you:</td>
-                <td><input type="checkbox" name="myChoices" value="Mon" />M
+                <td class="label"><label id="DayLabel" for="Day">Best days to contact you:</td>
+                <td class="form"><input type="checkbox" name="myChoices" value="Mon" />M
                 <input type="checkbox" name="myChoices" value="Tues" />T
                 <input type="checkbox" name="myChoices" value="Weds" />W
                 <input type="checkbox" name="myChoices" value="Thurs" />Th
                 <input type="checkbox" name="myChoices" value="Fri" />F</td>
             <tr>
                 <td></td>
-                <td align="right"><input type="submit" id="SubmitButton" value="Send Request"/></td>
+                <td  class="form"><input type="submit" id="SubmitButton" value="Send Request"/></td>
         </table>
         </form>
         <hr/>
-        <center>
-            <h4>123 Ocean Avenue, Seymour's Bay, NJ, 12345</h4>
-            <h4>123-456-7890</h4>
-        </center> 
-    </body>
+       </body>
+    
+    <!--External styling for footer -- lab V2-->
+    <footer class="smCenter"> 
+            123 Ocean Avenue, Seymour's Bay, NJ, 12345
+            </br>123-456-7890
+    </footer>
 </html>
