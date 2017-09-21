@@ -4,7 +4,13 @@
         <title>
             Menu
         </title>
-
+        <!-- Bootstrap start-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+       <!-- Bootstrap end-->
         <link rel="stylesheet" type="text/css" href="restaurantStyle.css">
 
         <style>
@@ -24,13 +30,54 @@
         <h1 align="center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Bob's Burgers</h1>
         <hr/>
 
-        <!--Nav-->
+        <!--Old Nav
         <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
+        -->
+
+        <!--New Pills Nav with Bootstrap-->
+        <ul class="nav nav-pills">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+            <li class="active"> <a href="menu.html">Menu</a></li>
+            <li> <a href="contact.html">Contact Us</a></li>
+        </ul>
          
-    
-        <div style="background-color: #e6ffe6">
+        <!--New Menu with Bootstrap-->
+        <div style="background-color: #e6ffe6" class="container-fluid">
         <hr/> 
-        <!--begin menu table-->
+            <div class="row" >
+                <div class="col-sm-4"><h3>Burgers & Fries</h3>An American Classic!</br>Your choice - with or without cheese</br>Pickle, onion, tomato, and lettuce</br>Served with our famous thick cut french fries<p>$7.95</p></div>
+                <div class="col-sm-4"><h3>Hot Dog & Chips</h3>A Summer Classic!</br>Your choice - white or wheat bun</br>Relish, mustard, and ketchup</br>Served with our house-made chips<p>$7.95</p></div>
+                <div class="col-sm-4"><h3>Italian Sausage & Peppers</h3>An All-Time Favorite!!</br>Your choice - mild or spicy</br>Cole Slaw</br>Served with garlic mashers<p>$10.95</p</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"><h3>Tenderloin Sandwich & Chips</h3>Really Hits the Spot!</br>Plain or Sesame Seed Bun</br>Pickle, onion, tomato, and lettuce</br>Served with our house-made chips<p>$8.95</p></div>
+                <div class="col-sm-4"><h3>House Salad</h3>On the Lighter Side</br>Your choice - with or without cheese</br>Iceberg lettuce, tomatoes, peppers</br>Thousand Island or Ranch Dressing</br>Served with a dinner roll<p>$6.95</p></div>
+                <div class="col-sm-4"><h3>Brisket Sandwich & Fries</h3>A Taste of Texas!</br>Smoked Brisket on thick-cut Texas</br>Toast</br>Cole Slaw</br>Served with our famous thick-cut</br>french fries<p>$7.95</p></div>
+            </div>
+        </div>
+
+        <!--New Bev menu with Bootstrap-->
+        <div style="background-color: #e6ffe6" class="container-fluid">
+        <hr/> 
+            <div class="row" >
+                <h2>Beverages</h2>
+                <div class="col-sm-6"><h3>Root Beer</h3></div>
+                <div class="col-sm-6">$3.00</div>
+            </div>
+            <div class="row" >
+                <div class="col-sm-6"><h3>Bottled Water</h3></div>
+                <div class="col-sm-6">$1.25</div>
+            </div>
+            <div class="row" >
+                <div class="col-sm-6"><h3>Lemonade</h3></div>
+                <div class="col-sm-6">$1.00</div>
+            </div>
+            <div class="row" >
+                <div class="col-sm-6"><h3>Iced Tea</h3></div>
+                <div class="col-sm-6">$1.25</div>
+            </div>
+        
+        <!--Old Menu
         <table>
             <tr class="center">
                 <td><h3>Burgers & Fries</h3>An American Classic!</br>Your choice - with or without cheese</br>Pickle, onion, tomato, and lettuce</br>Served with our famous thick cut french fries<p>$7.95</p></td>
@@ -43,9 +90,9 @@
                 <td><h3>Brisket Sandwich & Fries</h3>A Taste of Texas!</br>Smoked Brisket on thick-cut Texas</br>Toast</br>Cole Slaw</br>Served with our famous thick-cut</br>french fries<p>$7.95</p></td>
             </tr>
         </table></br>
+        -->
 
-
-        <!--beverage table-->
+        <!--Old Bev menu
         <table style="text-align: left; width: 45%;">
             <th colspan="2" style="font-size:20pt; color: #000099; text-decoration:underline; ">Beverages</th>
             <tr>
@@ -65,6 +112,7 @@
                 <td class="bevPrice">$1.25</td>
             </tr>
         </table>
+        -->
      <hr/>
     </div>
     
